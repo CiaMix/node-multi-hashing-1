@@ -10,7 +10,6 @@
                 "blake.c",
 				"gr.c",
 				"sha3d.c",
-				"sha3.c",
                 "boolberry.cc",
                 "c11.c",
                 "cryptonight.c",

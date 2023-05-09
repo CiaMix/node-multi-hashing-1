@@ -5,7 +5,7 @@
  * ==========================(LICENSE BEGIN)============================
  *
  * Copyright (c) 2007-2010  Projet RNRT SAPHIR
- * 
+ *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
  * "Software"), to deal in the Software without restriction, including
@@ -13,10 +13,10 @@
  * distribute, sublicense, and/or sell copies of the Software, and to
  * permit persons to whom the Software is furnished to do so, subject to
  * the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
  * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
  * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
@@ -182,7 +182,7 @@ sph_sha384_init(void *cc)
 {
 	sph_sha384_context *sc;
 
-	sc = (sph_sha384_context*)cc;
+	sc = cc;
 	memcpy(sc->val, H384, sizeof H384);
 	sc->count = 0;
 }
@@ -193,7 +193,7 @@ sph_sha512_init(void *cc)
 {
 	sph_sha512_context *sc;
 
-	sc = (sph_sha512_context*)cc;
+	sc = cc;
 	memcpy(sc->val, H512, sizeof H512);
 	sc->count = 0;
 }
@@ -245,4 +245,3 @@ sph_sha384_comp(const sph_u64 msg[16], sph_u64 val[8])
 }
 
 #endif
-

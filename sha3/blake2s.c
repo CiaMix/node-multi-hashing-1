@@ -15,9 +15,8 @@
 #include <string.h>
 #include <stdio.h>
 
-#include "sph_types.h"
-
-#include "blake2s.h"
+#include "sha3/sph_types.h"
+#include "crypto/blake2s.h"
 
 static const uint32_t blake2s_IV[8] =
 {

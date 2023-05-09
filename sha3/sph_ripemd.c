@@ -831,4 +831,3 @@ sph_ripemd160_comp(const sph_u32 msg[16], sph_u32 val[5])
 	RIPEMD160_ROUND_BODY(RIPEMD160_IN, val);
 #undef RIPEMD160_IN
 }
-
