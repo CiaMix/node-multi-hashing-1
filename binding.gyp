@@ -58,6 +58,8 @@
                 "x25x.c",
                 "xevan.c",
                 "zr5.c",
+				"sha512_256.c",
+				"sha256dt.c",
                 "sha3/aes_helper.c",
                 "sha3/hamsi.c",
                 "sha3/KeccakP-800-reference.c",
