@@ -6,6 +6,7 @@
 extern "C" {
 #include "argon2d.h"	
 #include "sha3d.h"
+#include "sha3.h"
 #include "allium.h"
 #include "bcrypt.h"
 #include "blake.h"
